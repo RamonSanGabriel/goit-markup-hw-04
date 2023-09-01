@@ -11,6 +11,7 @@
   --slate: #434455;
   --iris: #4d5ae5;
   --cornflower: #e7e9fc;
+  --grey: rgba(46, 47, 66, 0.70);
 }
 
 * body {
@@ -48,8 +49,12 @@ p {
   align-items: center;
   flex-shrink: 0;
   text-decoration: none;
-  width: 1158px;
+  width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  /* border: 4px solid lightcoral; */
 }
+
 
 .navigation>a {
   color: var(--navyblue);
@@ -72,6 +77,7 @@ p {
   line-height: 1.313em;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  /* padding-left: 156px; */
 }
 
 .navigation-section {
@@ -118,9 +124,10 @@ p {
 }
 
 /* Hero container section  */
-.section-hero {
-  background-color: var(--navyblue);
-  width: 100%;
+.hero-section {
+  background-color: var(--grey);
+  background-image: url("/images/people-office.jpg");
+  width: 1440px;
   background-size: 100%;
   margin: 0;
   justify-content: center;
@@ -128,19 +135,20 @@ p {
   padding: 188px 316px;
 }
 
-.section-hero h1 {
+.hero-section h1 {
   text-align: center;
   color: var(--white, #fff);
   font-size: 56px;
   font-weight: 700;
+  font-style: normal;
   line-height: 3.75rem;
   letter-spacing: 1.12px;
   text-transform: capitalize;
-  flex-shrink: 0;
   margin-bottom: 48px;
+  flex-shrink: 0;
 }
 
-.section-hero span {
+.hero-section span {
   text-transform: lowercase;
 }
 
@@ -158,6 +166,13 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 16px 32px;
+  /* margin-left: 636px; */
+  /* margin-bottom: 188px; */
+  /* margin-left: 636px; */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* bottom: 80px; */
+  /* left: 636px; */
   text-transform: capitalize;
 }
 
@@ -173,6 +188,22 @@ p {
   padding: 0px;
   margin-top: 53px;
   margin-bottom: 120px;
+  padding-left: 156px;
+}
+
+.container-feature {
+  background-color: var(--cloud);
+  border-radius: 4px;
+  padding: 24px 100px;
+  border-style: none;
+  width: 264px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.section-feature li>img {
+  align-items: center;
 }
 
 .section-feature li {
@@ -194,7 +225,9 @@ p {
   width: 264px;
   margin: 8px 0px 0px;
 }
-
+.section-services {
+  padding-left: 156px;
+}
 .services-title {
   font-size: 36px;
   font-weight: 700;
@@ -223,6 +256,7 @@ p {
 
 .section-team {
   text-align: center;
+  padding-left: 156px;
 }
 
 .team-title {
@@ -352,9 +386,9 @@ p {
 
 .footer {
   background-color: var(--navyblue);
-  width: 100%;
+  width: 1440px;
   margin-top: 120px;
-  padding: 101.5px 0px 100px;
+  /* padding: 101.5px 0px 100px; */
 }
 
 .footer-logo-web {
@@ -366,6 +400,7 @@ p {
   line-height: 1.313em;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  padding-left: 156px;
 }
 
 .footer>a {
@@ -379,12 +414,14 @@ p {
   text-decoration: none;
 }
 
-.footer p {
+.footer-content {
   color: var(--cloud, #f4f4fd);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-decoration: none;
   width: 264px;
+  height: auto;
   text-align: left;
   margin-top: 17.5px;
+  padding-left: 156px;
 }
