@@ -130,7 +130,7 @@ p {
 /* Hero container section  */
 .section-hero {
   background-color: var(--grey);
-  background-image: url("/images/people-office.jpg");
+  background-image: url('/images/people-office.jpg');
   width: 100%;
   background-size: 100%;
   /* margin: 0; */
