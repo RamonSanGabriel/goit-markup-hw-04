@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -18,9 +20,9 @@ body {
   color: var(--navyblue);
   line-height: 1.5rem;
   letter-spacing: 0.32px;
-  width: 1158px;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  width: 1158px;
 }
 
 h1,
@@ -39,28 +41,25 @@ p {
   margin-right: 0;
 }
 
-.section-hero,
+/* .section-hero,
 .section-feature,
 .section-services,
 .section-team {
   padding: 120px 0;
-}
+} */
 
 /* Main Container */
-.container {
+/* .container {
   max-width: 1158px;
-}
+} */
 
-/* Navigation container section  */
+/* Header: Navigation container section  */
 .container-header {
-  display: flex;
   border-bottom: 1px solid var(--cornflower);
-  align-items: center;
-  text-decoration: none;
-  width: 1158px;
+  display: flex;
   padding: 24px 15px;
+  align-items: center;
 }
-
 
 .navigation>a {
   color: var(--navyblue);
@@ -73,7 +72,6 @@ p {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-
 .navigation-logo-web {
   display: inline-flex;
   color: var(--iris, #4d5ae5);
@@ -85,14 +83,13 @@ p {
   text-transform: uppercase;
 }
 
-.navigation-section {
+.navigation-menu {
   display: inline-flex;
   list-style-type: none;
   color: var(--navyblue, #2e2f42);
-  margin-left: 76px;
 }
 
-.navigation-section li:not(:last-child) {
+.navigation-menu li:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -102,17 +99,17 @@ p {
   font-weight: 500;
 }
 
-.navigation-section a:hover {
+.navigation-menu a:hover {
   color: var(--ocean, #404bbf);
 }
 
 .address-section {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
 }
 
 .address-section a {
-  display: flex;
+  display: inline-flex;
   color: var(--slate, #434455);
   font-style: normal;
   line-height: 1.5rem;
@@ -126,32 +123,38 @@ p {
 }
 
 /* Hero container section  */
-
+.section-hero {
+  padding: 188px 15px 120px;
+  background-image: url('/images/people-office.jpg');
+  border: 3px solid yellow;
+}
 .container-hero {
+  border: 5px solid tomato;
   position: relative;
   background-color: var(--grey);
-  /* background-image: url('/images/people-office.jpg'); */
-  /* width: 100%; */
+  width: 100%;
   margin: 0;
   justify-content: center;
   text-align: center;
   align-content: center;
-  /* padding: 120px 0px; */
-  /* border: 20px solid yellow; */
+  /* padding: 188px 15px 120px; */
   /* padding: 188px 316px; */
 }
 
 .container-hero img {
   position: relative;
-  /* width: 100%; */
+  width: 100%;
+  opacity: 0.2;
+
   /* background-size: cover; */
   /* border: 5px solid lightcoral; */
 }
 
-.hero-header h1 {
+.hero-title {
   position: absolute;
   text-align: center;
-  /* top: 188px; */
+  top: 0;
+  right: 300px;
   color: var(--white, #fff);
   font-size: 56px;
   font-weight: 700;
@@ -165,12 +168,12 @@ p {
   /* flex-shrink: 0; */
 }
 
-.section-hero span {
+.hero-title span {
   text-transform: lowercase;
 }
 
-.hero-button button {
-  position: absolute;
+.hero-button {
+  display: absolute;
   color: var(--white, #fff);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -215,16 +218,22 @@ p {
   flex-shrink: 0;
   margin-bottom: 8px;
 }
-
-.section-feature li>img {
+.feature-menu {
+  list-style: none;
+}
+.feature-icons {
+  width: 64px;
+  height: 64px;
+}
+.feature-list>img {
   align-items: center;
 }
 
-.section-feature li {
+.feature-list {
   margin-right: 24px;
 }
 
-.section-feature h3 {
+.feature-list h3 {
   color: var(--navyblue);
   font-size: 20px;
   font-weight: 500;
@@ -234,7 +243,7 @@ p {
   margin: 0;
 }
 
-.section-feature p {
+.feature-list p {
   color: var(--slate, #434455);
   width: 264px;
   margin: 8px 0px 0px;
