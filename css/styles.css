@@ -243,7 +243,6 @@ p {
 .container-services {
   text-align: center;
   padding: 0px 15px;
-  border: 3px solid forestgreen;
 }
 
 .services-title {
@@ -276,7 +275,7 @@ p {
 .services-list img {
   width: 100%;
   border: 1px solid var(--CORNFLOWER, #E7E9FC);
-  /* background: url(/images/section2-img1.jpg), lightgray 50% / cover no-repeat; */
+ 
 }
 
 /* Index: Section 3 (Our Team) */
@@ -291,7 +290,6 @@ p {
   font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: 0.72px;
-  /* margin-top: 120px; */
   margin-bottom: 72px;
   text-transform: capitalize;
 }
@@ -333,12 +331,56 @@ p {
 }
 
 .team-list p {
-  margin-top: 8px;
-  margin-bottom: 32px;
+  margin: 8px 0px;
+  /* margin-bottom: 32px; */
   color: var(--slate);
   text-align: center;
 }
+.container-team-icon {
+  display: flex;
+  width: 264px;
+  justify-content: center;
+}
+.team-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+}
+.team-icon:last-child {
+  margin-right: 0px;
+}
 
+/* Index: Section Customers */
+.section-customer {
+  padding: 120px 156px;
+  border: 3px solid tomato;
+
+}
+
+.container-customer {
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.customer-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 2.5em;
+  letter-spacing: 0.72px;
+  margin-bottom: 72px;
+  text-transform: capitalize;
+}
+/* .customer-menu {
+  list-style: none;
+} */
+.customer-icon {
+  width: 104px;
+  height: 56px;
+  border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+}
+ 
 /* Portfolio: Project Card Section */
 .filter {
   display: flex;
