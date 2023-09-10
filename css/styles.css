@@ -88,7 +88,7 @@ p {
 .container-header {
   display: flex;
   border-bottom: 1px solid var(--cornflower);
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   padding: 24px 156px;
   align-items: center;
