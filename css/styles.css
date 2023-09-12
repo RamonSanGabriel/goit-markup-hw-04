@@ -455,9 +455,13 @@ p {
 }
 
 .footer p {
+  /* display: flex; */
   color: var(--cloud);
   text-decoration: none;
   width: 264px;
   text-align: left;
   margin-top: 17.5px;
+}
+.footer-social-media {
+/* display: inline-flex; */
 }
