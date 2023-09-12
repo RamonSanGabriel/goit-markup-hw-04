@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -21,9 +22,6 @@ body {
   color: var(--navyblue);
   line-height: 1.5rem;
   letter-spacing: 0.32px;
-  /* padding: 0; */
-  /* margin: auto; */
-
 }
 
 h1,
@@ -38,7 +36,8 @@ p {
 }
 
 .section {
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
+  padding: 120px 0;
 }
 
 .container {
@@ -52,29 +51,31 @@ p {
   margin-right: 0;
 }
 
-.services-list:not(:last-child),
+/* .services-list:not(:last-child),
 .feature-list:not(:last-child),
 .team-list:not(:last-child),
 .filter-list:not(:last-child) {
   margin-right: 24px;
-}
-
-.services-menu,
+} */
 .feature-menu,
-.filter-menu,
-.team-menu {
+.services-menu,
+.team-menu,
+.card-menu,
+.filter-menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  /* align-items: flex-start; */
-  padding: 0;
-  margin: 0;
+  align-items: flex-start;
+  gap: 48px 24px;
+  /* padding: 0;
+  margin: 0; */
 }
 
 .services-list,
-.feature-list,
-.card-list {
+/* .feature-list, */
+.card-list,
+.team-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
@@ -84,13 +85,17 @@ p {
 } */
 
 /* Header: Navigation container section  */
+header {
+  border-bottom: 1px solid var(--cornflower);
+}
 .container-header {
   display: flex;
-  border-bottom: 1px solid var(--cornflower);
   justify-content: space-between;
   align-items: center;
   padding: 24px 156px;
   align-items: center;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .navigation-header {
@@ -250,10 +255,10 @@ p {
 }
 
 /* Index: Section 1 (Feature) */
-.section-feature {
+/* .section-feature {
   padding: 120px 0;
   list-style-type: none;
-}
+} */
 
 .container-feature {
   display: flex;
@@ -311,12 +316,12 @@ p {
 
 /* Index: Section 2 (What we are doing) */
 .section-services {
-  padding: 0 156px 120px;
+  padding-bottom: 120px;
 }
 
 .container-services {
   text-align: center;
-  padding: 0px 15px;
+  padding: 0px 156px;
 }
 
 .services-title {
@@ -353,11 +358,11 @@ p {
 }
 
 /* Index: Section 3 (Our Team) */
-.section-team {
+/* .section-team {
   text-align: center;
   background-color: var(--cloud);
   padding: 120px 0px;
-}
+} */
 
 .team-title {
   font-size: 36px;
@@ -365,6 +370,7 @@ p {
   line-height: 2.5rem;
   letter-spacing: 0.72px;
   margin-bottom: 72px;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -424,15 +430,15 @@ p {
 }
 
 /* Index: Section Customers */
-.section-customer {
+/* .section-customer {
   padding: 120px 156px;
   border: 3px solid tomato;
 
-}
+} */
 
 .container-customer {
   text-align: center;
-  padding: 0px 15px;
+  padding: 0px 156px;
 }
 
 .customer-title {
