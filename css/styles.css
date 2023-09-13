@@ -7,13 +7,14 @@
 }
 
 :root {
-  --navyblue: #2e2f42;
+  --navyblue: #2E2F42;
   --cloud: #f4f4fd;
   --ocean: #404bbf;
   --slate: #434455;
   --iris: #4d5ae5;
   --cornflower: #e7e9fc;
-  --grey: rgba(46, 47, 66, 0.70);
+  --lightslate: #8E8F99;
+
 }
 
 body {
@@ -304,16 +305,24 @@ p {
   gap: 24px;
   padding-bottom: 32px;
 }
-.social-media-list-icon {
-background-color: var(--iris);
-border-radius: 50px;
 
+.social-media-list-icon {
+  background-color: var(--iris);
+  border-radius: 50%;
 }
+
+.social-media-list-icon:hover {
+  background: var(--ocean);
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+
 .social-media-icon {
   display: flex;
   width: 40px;
   height: 40px;
   padding: 12px;
+  fill: var(--cloud);
 }
 
 .social-media-icon:last-child {
@@ -339,7 +348,13 @@ border-radius: 50px;
   width: 168px;
   height: 88px;
   border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+  border: 1px solid var(--lightslate);
+  fill:var(--lightslate);
+}
+
+.customer-icon:hover {
+  border: 1px solid var(--ocean);
+  fill: var(--ocean);
 }
 
 /* Portfolio: Project Card Section */
@@ -453,4 +468,30 @@ border-radius: 50px;
 
 .footer-icon-list p {
   margin-bottom: 16px;
+}
+.footer-container-icon {
+  display: flex;
+  align-items: center;
+}
+.footer-media-menu {
+  list-style: none;
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-media-list-icon {
+  /* justify-content: center; */
+  align-items: center;
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+
+.footer-media-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px 8px;
+  fill: var(--cloud);
 }
