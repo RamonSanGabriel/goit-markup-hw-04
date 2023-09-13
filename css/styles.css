@@ -60,7 +60,7 @@ p {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;
 }
 
@@ -152,8 +152,8 @@ p {
     url('/images/people-office.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 188px;
-  margin: 0 auto;
+  padding: 188px 0;
+  /* margin: 0 auto; */
 }
 
 .hero {
@@ -192,7 +192,6 @@ p {
   padding: 16px 32px;
   text-transform: capitalize;
   left: 636px;
-  margin-bottom: 188px;
 }
 
 .hero-button:hover {
@@ -275,12 +274,12 @@ p {
   text-transform: capitalize;
 }
 
-.team-menu {
+/* .team-menu {
   list-style-type: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .team-list {
   border-radius: 0px 0px 4px 4px;
@@ -291,7 +290,7 @@ p {
 }
 
 .team-img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .team-list h3 {
@@ -305,34 +304,52 @@ p {
   margin: 8px 0px;
   /* margin-bottom: 32px; */
   color: var(--slate);
-  text-align: center;
+  /* text-align: center; */
 }
 
-.container-team-icon {
-  display: flex;
-  width: 264px;
+/* .social-media-icon {
+  list-style: none;
+  display: block;
   justify-content: center;
+  align-items: center;
+  background-color: rgba(77, 90, 229, 1);
+  border-radius: 20px;
+  gap: 24px;
+} */
+
+.social-media-list {
+  /* display: inline-flex; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  /* column-gap: 24px; */
 }
 
-.team-icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 24px;
-  margin-bottom: 32px;
+.social-media-icon use {
+  /* display: inline-block; */
+  /* width: 40px; */
+  /* height: 40px; */
 }
-
-.team-icon:last-child {
+.social-media-icon {
+  display: flex;
+  flex-wrap:wrap wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgba(77, 90, 229, 1);
+}
+.social-media-menu {
+}
+.social-media-icon:last-child {
   margin-right: 0px;
 }
 
 /* Index: Section Customers */
-/* .section-customer {
-  padding: 120px 156px;
-  border: 3px solid tomato;
-
-} */
-
-
 .customer-title {
   font-size: 36px;
   font-weight: 700;
@@ -462,6 +479,7 @@ p {
   text-align: left;
   margin-top: 17.5px;
 }
-.footer-social-media {
-/* display: inline-flex; */
+
+.footer-icon-list p {
+  margin-bottom: 16px;
 }
