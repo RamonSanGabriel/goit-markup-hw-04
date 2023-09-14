@@ -155,7 +155,6 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 188px 0;
-  /* margin: 0 auto; */
 }
 
 .hero {
@@ -391,9 +390,11 @@ p {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
+
 .section-card {
   padding-bottom: 120px;
 }
+
 /* .container-card {
   padding: 0px 15px 120px;
 } */
@@ -420,10 +421,11 @@ p {
 } */
 .card-list-content:hover {
   cursor: pointer;
-    /* border: 1px solid var(--CLOUD, #F4F4FD); */
-    background: var(--WHITE, #FFF);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  /* border: 1px solid var(--CLOUD, #F4F4FD); */
+  background: var(--WHITE, #FFF);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 .card-content {
   border-left: 1px solid var(--cornflower, #e7e9fc);
   border-right: 1px solid var(--cornflower, #e7e9fc);
@@ -431,6 +433,7 @@ p {
   background: var(--white, #fff);
   padding: 32px 16px;
 }
+
 /* .card-content:hover {
   cursor: pointer;
   border: 1px solid var(--CLOUD, #F4F4FD);
