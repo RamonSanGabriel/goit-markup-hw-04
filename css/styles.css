@@ -14,6 +14,7 @@
   --iris: #4d5ae5;
   --cornflower: #e7e9fc;
   --lightslate: #8E8F99;
+  --green: #31D0AA;
 
 }
 
@@ -531,7 +532,7 @@ p {
 }
 
 .footer-media-list-icon:hover {
-  background: var(--ocean);
+  background: var(--green);
   cursor: pointer;
 }
 
