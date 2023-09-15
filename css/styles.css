@@ -126,7 +126,8 @@ p {
   font-weight: 500;
 }
 
-.navigation-list a:hover {
+.navigation-list a:hover,
+.navigation-list a:focus {
   color: var(--ocean, #404bbf);
 }
 
@@ -143,7 +144,8 @@ p {
   margin-right: 40px;
 }
 
-.address-section a:hover {
+.address-section a:hover,
+.address-section a:focus {
   color: var(--ocean, #404bbf);
 }
 
@@ -192,7 +194,8 @@ p {
   left: 636px;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background: var(--ocean);
 }
 
@@ -208,6 +211,8 @@ p {
 .container-feature-icon {
   background-color: var(--cloud);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature-icons {
@@ -319,7 +324,8 @@ p {
   border-radius: 50%;
 }
 
-.social-media-list-icon:hover {
+.social-media-list-icon:hover,
+.social-media-list-icon:focus {
   background: var(--ocean);
   cursor: pointer;
 }
@@ -359,7 +365,8 @@ p {
   fill: var(--lightslate);
 }
 
-.customer-icon:hover {
+.customer-icon:hover,
+.customer-icon:focus {
   border: 1px solid var(--ocean);
   fill: var(--ocean);
   cursor: pointer;
@@ -392,7 +399,8 @@ p {
   letter-spacing: 0.64px;
 }
 
-.filter button:hover {
+.filter button:hover,
+.filter button:focus {
   color: var(--white, #fff);
   border-radius: 4px;
   background: var(--ocean, #404bbf);
@@ -422,15 +430,9 @@ p {
   width: 360px;
 }
 
-/* .card-list img:hover {
+.card-list-content:hover,
+.card-list-content:focus {
   cursor: pointer;
-  border: 1px solid var(--CLOUD, #F4F4FD);
-  background: var(--WHITE, #FFF);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-} */
-.card-list-content:hover {
-  cursor: pointer;
-  /* border: 1px solid var(--CLOUD, #F4F4FD); */
   background: var(--WHITE, #FFF);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -443,12 +445,6 @@ p {
   padding: 32px 16px;
 }
 
-/* .card-content:hover {
-  cursor: pointer;
-  border: 1px solid var(--CLOUD, #F4F4FD);
-  background: var(--WHITE, #FFF);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-} */
 .card-content h3 {
   font-size: 20px;
   font-weight: 500;
@@ -545,7 +541,8 @@ p {
   background-color: var(--iris);
 }
 
-.footer-media-list-icon:hover {
+.footer-media-list-icon:hover,
+.footer-media-list-icon:focus {
   background: var(--green);
   cursor: pointer;
 }
