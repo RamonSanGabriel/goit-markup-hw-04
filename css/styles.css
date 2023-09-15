@@ -53,6 +53,7 @@ p {
 }
 
 .feature-menu,
+.services-menu,
 .team-menu,
 .customer-menu,
 .card-menu,
@@ -70,6 +71,7 @@ p {
 .team-list {
   flex-basis: calc((100% - 72px) / 4);
 }
+
 /* Header: Navigation container section  */
 .container-header {
   display: flex;
@@ -201,7 +203,7 @@ p {
 
 .feature-list {
   flex-basis: calc((100% - 72) / 4);
-} */
+}
 
 .container-feature-icon {
   background-color: var(--cloud);
@@ -242,14 +244,16 @@ p {
   margin-bottom: 72px;
   text-transform: capitalize;
 }
-.services-menu {
+
+/* .services-menu {
   display: flex;
-    /* flex-wrap: wrap; */
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+} */
+
 .services-list {
   flex-shrink: 1;
   flex-basis: calc((100% - 72px) / 3);
@@ -257,7 +261,7 @@ p {
 
 .services-list img {
   border: 1px solid var(--CORNFLOWER, #E7E9FC);
-
+  width: 360px;
 }
 
 /* Index: Section 3 (Our Team) */
