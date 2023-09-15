@@ -61,7 +61,7 @@ p {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 24px;
 }
 
@@ -70,7 +70,6 @@ p {
 .team-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
-
 /* Header: Navigation container section  */
 .container-header {
   display: flex;
@@ -203,10 +202,10 @@ p {
 .section-feature {
   padding-top: 120px;
 }
-
+/* 
 .feature-list {
   flex-basis: calc((100% - 72) / 4);
-}
+} */
 
 .container-feature-icon {
   background-color: var(--cloud);
@@ -255,7 +254,6 @@ p {
 .services-list img {
   width: 100%;
   border: 1px solid var(--CORNFLOWER, #E7E9FC);
-
 }
 
 /* Index: Section 3 (Our Team) */
