@@ -62,7 +62,6 @@ p {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  align-items: center;
   gap: 24px;
 }
 
@@ -73,11 +72,15 @@ p {
 }
 
 /* Header: Navigation container section  */
+.header {
+  padding: 24px 0px;
+  border-bottom: 1px solid var(--cornflower);
+
+}
 .container-header {
   display: flex;
-  border-bottom: 1px solid var(--cornflower);
-  padding: 24px 156px;
-  width: 1440px;
+  padding: 0px 156px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -467,8 +470,7 @@ p {
 .container-footer {
   display: flex;
   padding: 0 156px;
-  width: 1440px;
-  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .footer-logo-web {
