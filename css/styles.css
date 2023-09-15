@@ -207,13 +207,12 @@ p {
 
 .container-feature-icon {
   background-color: var(--cloud);
-  text-align: center;
 }
 
 .feature-icons {
   width: 64px;
   height: 64px;
-  margin: 24px 0px;
+  margin: 24px 100px;
 }
 
 .feature-list h3 {
