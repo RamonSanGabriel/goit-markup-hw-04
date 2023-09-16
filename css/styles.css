@@ -253,15 +253,6 @@ p {
   text-transform: capitalize;
 }
 
-/* .services-menu {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-} */
-
 .services-list {
   flex-shrink: 1;
   flex-basis: calc((100% - 72px) / 3);
@@ -414,20 +405,6 @@ p {
 .section-card {
   padding-bottom: 120px;
 }
-
-/* .container-card {
-  padding: 0px 15px 120px;
-} */
-
-/* .card-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 48px;
-} */
 
 .card-list img {
   width: 360px;
